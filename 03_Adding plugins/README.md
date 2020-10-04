@@ -61,3 +61,16 @@ and make sure the `POST` endpoint still works.
 `curl -d '{"name":"myOtherRestaurant"}' -H "Content-Type: application/json" -X POST https://xxx.execute-api.us-east-1.amazonaws.com/dev/restaurants`
 
 </p></details>
+
+You can go to the official plugins list [here](https://www.serverless.com/plugins/) to browse the available plugins, curated from the community. Here are some of the most popular plugins:
+
+* serverless-offline: simulates running API Gateway locally
+* serverless-webpack: use webpack to bundle functions before deployment
+* serverless-domain-manager: creates custom domain names and create Route53 record set for API Gateway
+* serverless-python-requirements: bundles Python functions's dependencies
+* serverless-step-functions: configure Step Functions state machines in your serverless.yml
+* serverless-split-stacks: split the CloudFormation stack into nested stacks to get beyond CloudFormation's 200 resources limit per stack
+* serverless-finch: host static websites in S3
+* serverless-appsync-plugin: configure AppSync APIs
+
+and many many more.
