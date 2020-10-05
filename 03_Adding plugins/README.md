@@ -64,13 +64,13 @@ and make sure the `POST` endpoint still works.
 
 You can go to the official plugins list [here](https://www.serverless.com/plugins/) to browse the available plugins, curated from the community. Here are some of the most popular plugins:
 
-* serverless-offline: simulates running API Gateway locally
-* serverless-webpack: use webpack to bundle functions before deployment
-* serverless-domain-manager: creates custom domain names and create Route53 record set for API Gateway
-* serverless-python-requirements: bundles Python functions's dependencies
-* serverless-step-functions: configure Step Functions state machines in your serverless.yml
-* serverless-split-stacks: split the CloudFormation stack into nested stacks to get beyond CloudFormation's 200 resources limit per stack
-* serverless-finch: host static websites in S3
-* serverless-appsync-plugin: configure AppSync APIs
+* [serverless-offline](https://github.com/dherault/serverless-offline): simulates running API Gateway locally
+* [serverless-webpack](https://github.com/serverless-heaven/serverless-webpack): use webpack to bundle functions before deployment
+* [serverless-domain-manager](https://github.com/amplify-education/serverless-domain-manager): creates custom domain names and create Route53 record set for API Gateway
+* [serverless-python-requirements](https://github.com/UnitedIncome/serverless-python-requirements): bundles Python functions's dependencies
+* [serverless-step-functions](https://github.com/serverless-operations/serverless-step-functions): configure Step Functions state machines in your serverless.yml
+* [serverless-split-stacks](https://github.com/dougmoscrop/serverless-plugin-split-stacks): split the CloudFormation stack into nested stacks to get beyond CloudFormation's 200 resources limit per stack
+* [serverless-finch](https://github.com/fernando-mc/serverless-finch): host static websites in S3
+* [serverless-appsync-plugin](https://github.com/sid88in/serverless-appsync-plugin): configure AppSync APIs
 
 and many many more.
