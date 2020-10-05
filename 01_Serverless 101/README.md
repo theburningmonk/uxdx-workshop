@@ -110,6 +110,57 @@ See more information about `invoke local` command on [CLI documentation](https:/
 </p></details>
 
 <details>
+<summary><b>Step through a function invocation with a debugger</b></summary><p>
+
+1. Place a breakpoint in the `handler.js` file
+
+![](/images/mod01-001.png)
+
+2. Inside VS Code, click on the `Run` button and then `create a launch.json file`.
+
+![](/images/mod01-002.png)
+
+and then choose `Node.js` as the environment
+
+![](/images/mod01-003.png)
+
+3. Replace the `launch.json` with the following:
+
+```json
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "run hello function",
+      "program": "${workspaceFolder}/node_modules/.bin/sls",
+      "args": [
+        "invoke",
+        "local",
+        "-f",
+        "hello",
+        "-d",
+        "{}"
+      ]
+    }
+  ]
+}
+```
+
+This would use the same `invoke local` command we saw in the last step to invoke the function locally, only this time we'll attach a Node.js debugger so we can step through the code.
+
+4. Click the `run hello function` button
+
+![](/images/mod01-004.png)
+
+and you can now step through the function invocation step by step!
+
+![](/images/mod01-005.png)
+
+</p></details>
+
+<details>
 <summary><b>Deploy a serverless project</b></summary><p>
 
 1. Run `deploy` command:
